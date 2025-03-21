@@ -1,11 +1,8 @@
-/* Ajuste o body para garantir que tudo fique centralizado corretamente */
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Garantir que o body ocupe toda a altura da tela */
     background-color: #000080;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -13,9 +10,6 @@ body {
     margin: 0;
     padding: 20px;
 }
-
-
-/* Container flexível para garantir que o conteúdo se ajuste à tela */
 
 .container {
     max-width: 600px;
@@ -25,13 +19,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /* Garantir que o conteúdo fique no topo */
     height: 100%;
-    /* Garantir que o conteúdo ocupe toda a altura disponível */
 }
-
-
-/* Ajuste na card para garantir que o conteúdo apareça corretamente */
 
 .card {
     background: transparent;
@@ -44,13 +33,8 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* Centralizar o conteúdo */
     height: auto;
-    /* Garantir que a altura se ajuste ao conteúdo */
 }
-
-
-/* Ajuste das explicações e motivos */
 
 .explanation,
 .reasons {
@@ -74,9 +58,6 @@ body {
     line-height: 1.5;
 }
 
-
-/* Ajuste da margem e padding para evitar que o conteúdo fique fora da tela */
-
 .reasons ul {
     list-style: none;
     padding: 0;
@@ -89,9 +70,6 @@ body {
     border-radius: 5px;
     border-left: 4px solid gold;
 }
-
-
-/* Ajuste dos botões para manter o layout */
 
 button {
     background: gold;
@@ -106,11 +84,8 @@ button {
 }
 
 button:hover {
-    background: #ffd700;
+    background: #dff702;
 }
-
-
-/* Garantir que a posição do botão "Não" funcione corretamente */
 
 #no-button {
     position: relative;
@@ -121,9 +96,6 @@ button:hover {
     top: calc(50% - 20px);
     left: calc(50% - 40px);
 }
-
-
-/* Responsividade para telas menores */
 
 @media (max-width: 600px) {
     .music-iframe {
