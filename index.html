@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja humilde, plis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Oii, linda.</h2>
+            <p class="message">Queria arrumar uma maneira de me desculpar corretamente com você, achei que mandar mensagem seria uma coisa mais simples, então pensei que fazer um pedido de desculpas programando mesmo. Não está mil maravilhas, assim como não saiu do jeito
+                que queria, mas juro que eu me esforcei. Enfim, espero que goste pelo menos um pouquinho.</p>
+
+            <div class="explanation">
+                <h3>O que aconteceu?</h3>
+                <p>Eu realmente não te vi, e eu peço perdão por isso. Não sei se você estava sentada à mesa ou em outro canto, mas juro que, se tivesse te visto, teria ido direto falar com você. Você me conhece, sabe que sempre faço questão de te cumprimentar,
+                    de te abraçar várias vezes. Nunca passaria por você sem falar ou abraçar.</p>
+
+                <h3>O que eu quero que você saiba?</h3>
+                <p>Quero que saiba que sua amizade é muito importante para mim e que jamais te ignoraria de propósito. Eu valorizo sua amizade e não quero que um mal-entendido nos afaste. Espero que essa situação se resolva agora, porque eu realmente me
+                    importo com isso.</p>
+
+                <h3>Realmente lamento, linda 😔</h3>
+                <p>Prometo que vou prestar mais atenção a partir de agora, vou tentar ser menos distraída. Se, além disso, fiz algo mais que tenha te chateado, me desculpa de coração 🤍.</p>
+            </div>
+
+            <div class="reasons">
+                <h3>5 Motivos para Me Perdoar</h3>
+                <ul>
+                    <li>1. Apesar de eu ser meio avoada, juro que compenso do meu jeitinho. </li>
+                    <li>2. Apesar de ser meio coisadinha, sempre vou tentar te ajudar no que precisar 🫶.</li>
+                    <li>3. Posso ficar sem a minha botinha não 😔.</li>
+                    <li>4. Ainda temos momentinhos para viver.</li>
+                    <li>5. Ai, linda, seja humilde e me perdoe, plis 🤍.</li>
+                </ul>
+            </div>
+
+            <div class="question">
+                <h3>Vossa senhoria poderia ser humilde e perdoar?</h3>
+                <button onclick="redirecionar()">Sim</button>
+                <button id="no-button">Não</button>
+                <!-- Botão de música removido, mas com link para a página da música -->
+                <a href="https://open.spotify.com/track/6oDfRqEbg2gOf64XSwgfCF" target="_blank">
+                    <button id="playMusic2">Escutar Música</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirecionar() {
+            window.location.href = "yes.html";
+        }
+
+        function moveNoButton() {
+            let noButton = document.getElementById("no-button");
+            noButton.style.position = "absolute";
+            noButton.style.top = Math.random() * (window.innerHeight - noButton.clientHeight) + "px";
+            noButton.style.left = Math.random() * (window.innerWidth - noButton.clientWidth) + "px";
+        }
+
+        document.getElementById("no-button").addEventListener("mouseover", moveNoButton);
+        document.getElementById("no-button").addEventListener("touchstart", moveNoButton);
+    </script>
+</body>
+
+</html>

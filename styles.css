@@ -1,0 +1,135 @@
+/* Ajuste o body para garantir que tudo fique centralizado corretamente */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Garantir que o body ocupe toda a altura da tela */
+    background-color: #000080;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: gold;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* Container flexível para garantir que o conteúdo se ajuste à tela */
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Garantir que o conteúdo fique no topo */
+    height: 100%;
+    /* Garantir que o conteúdo ocupe toda a altura disponível */
+}
+
+
+/* Ajuste na card para garantir que o conteúdo apareça corretamente */
+
+.card {
+    background: transparent;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    position: relative;
+    color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* Centralizar o conteúdo */
+    height: auto;
+    /* Garantir que a altura se ajuste ao conteúdo */
+}
+
+
+/* Ajuste das explicações e motivos */
+
+.explanation,
+.reasons {
+    text-align: left;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 215, 0, 0.2);
+    border: 2px solid gold;
+}
+
+.explanation h3,
+.reasons h3 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.explanation p,
+.reasons li {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* Ajuste da margem e padding para evitar que o conteúdo fique fora da tela */
+
+.reasons ul {
+    list-style: none;
+    padding: 0;
+}
+
+.reasons li {
+    background: rgba(255, 215, 0, 0.1);
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border-left: 4px solid gold;
+}
+
+
+/* Ajuste dos botões para manter o layout */
+
+button {
+    background: gold;
+    color: navy;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    background: #ffd700;
+}
+
+
+/* Garantir que a posição do botão "Não" funcione corretamente */
+
+#no-button {
+    position: relative;
+}
+
+#no-button:hover {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: calc(50% - 40px);
+}
+
+
+/* Responsividade para telas menores */
+
+@media (max-width: 600px) {
+    .music-iframe {
+        height: 60px;
+    }
+    button {
+        padding: 8px;
+    }
+}
